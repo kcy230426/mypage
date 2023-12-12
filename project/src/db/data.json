@@ -1,0 +1,17 @@
+{
+    "db":{
+        "nav":[
+            {"id":"1", "title":"HOME", "cls":"li1"},
+            {"id":"2", "title":"ABOUT", "cls":"li2"},
+            {"id":"3", "title":"PORTFOLIO", "cls":"li3"},
+            {"id":"4", "title":"CONTACT", "cls":"li4"}
+        ],
+    
+        "go":[
+                {"id":"1", "title":"HOME", "cls":"li1"},
+                {"id":"2", "title":"ABOUT", "cls":"li2"},
+                {"id":"3", "title":"PORTFOLIO", "cls":"li3"},
+                {"id":"4", "title":"CONTACT", "cls":"li4"}
+            ]
+    }
+}
