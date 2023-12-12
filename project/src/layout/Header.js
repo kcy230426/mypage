@@ -12,7 +12,7 @@ const Header = (props) =>{
                 <ul>
                     {
                         data.nav.map((v,i)=>(
-                            <li key={v.id} class={v.cls}>{v.title}
+                            <li key={v.id} className={v.cls}>{v.title}
                                 <div className="graphic">
                                     <div className="circle1"></div>
                                     <div className="circle2"></div>

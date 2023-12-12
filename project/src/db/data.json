@@ -7,11 +7,32 @@
             {"id":"4", "title":"CONTACT", "cls":"li4"}
         ],
     
-        "go":[
-                {"id":"1", "title":"HOME", "cls":"li1"},
-                {"id":"2", "title":"ABOUT", "cls":"li2"},
-                {"id":"3", "title":"PORTFOLIO", "cls":"li3"},
-                {"id":"4", "title":"CONTACT", "cls":"li4"}
+        "profile":[
+                {"id":"1", "contents":"김채연", "cls":"name"},
+                {"id":"2", "contents":"1995. 12. 30", "cls":"birthday"},
+                {"id":"3", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
+                {"id":"4", "contents":"purple_galaxy@naver.com", "cls":"email"}
+            ],
+
+        "timeline":[
+                {"id":"1", "date":"2014-2017", "contents":"신구대학교 시각디자인과 입학/졸업", "cls":"li1"},
+                {"id":"2", "date":"2018-2022", "contents":"주식회사 디지쿼터스 디자이너(콘텐츠사업부)입사/퇴사", "cls":"li2"},
+                {"id":"3", "date":"2023", "contents":"포토샵 GTQ 1급 자격증 / 웹기능사자격증(필기/실기) 취득", "cls":"li3"},
+                {"id":"4", "date":"2023", "contents":"그린컴퓨터아카데미 프론트엔드과정 수료 (04. 26 ~ 10. 04)", "cls":"li4"}
+            ],
+
+        "great":[
+                {"id":"1", "contents1":"80", "contents2":"%", "icon":"./asset/red_arrow.png", "img1":"./asset/photoshop.png", "alt1":"포토샵 아이콘", "img2":"./asset/illust.png", "alt2":"일러스트 아이콘", "img3":"./asset/xd.png", "alt3":"XD 아이콘", "img4":"./asset/figma.png", "alt4":"피그마 아이콘", "img5":"./asset/html.png", "alt5":"html & css 아이콘", "numbercls":"number", "arrowcls":"arrow"}
+            ],
+
+        "good":[
+                {"id":"1", "contents1":"60", "contents2":"%", "icon":"./asset/blue_arrow.png", "img1":"./asset/react.png", "alt1":"리액트 아이콘", "img2":"./asset/gitnotion.png", "alt2":"깃 & 노션 아이콘", "img3":"./asset/sass.png", "alt3":"SASS 아이콘", "img4":"./asset/java.png", "alt4":"자바 스크립트 아이콘", "img5":"./asset/jquery.png", "alt5":"제이쿼리 아이콘", "numbercls":"number", "arrowcls":"arrow"}
+
+            ],
+
+        "soso":[
+                {"id":"1", "contents1":"40", "contents2":"%", "icon":"./asset/yellow_arrow.png", "img1":"./asset/pre.png", "alt1":"프리미어 아이콘", "img2":"./asset/ae.png", "alt2":"애프터 이펙트 아이콘", "img3":"./asset/sql.png", "alt3":"mySql 아이콘", "img4":"./asset/node.png", "alt4":"노드 아이콘", "img5":"./asset/php.png", "alt5":"php 아이콘", "numbercls":"number", "arrowcls":"arrow"}
+
             ]
     }
 }

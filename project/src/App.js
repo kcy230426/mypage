@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import Header from './component/Header'
-import Main from './component/Main'
-import Footer from './component/Footer'
+import Header from './layout/Header'
+import Main from './layout/Main'
+import Footer from './layout/Footer'
 import data from './db/data.json'
+
 
 function App() {
   return (
