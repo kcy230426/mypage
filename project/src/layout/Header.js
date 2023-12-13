@@ -9,7 +9,7 @@ const Header = (props) =>{
 
     useEffect(() => {
         const handleScroll = () => {
-          const scrolled = window.scrollY > 100;
+          const scrolled = window.scrollY > 80;
           setIsScrolled(scrolled);
         };
     

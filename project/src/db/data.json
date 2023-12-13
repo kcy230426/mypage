@@ -36,6 +36,15 @@
             ],
         "motive":[
             {"id":"1", "imgcls":"image", "img":"./asset/moti_img.png", "alt":"앱 디자인 이미지", "title":"Motivation", "content1":"직장에서 앱 제작 프로젝트의 디자인을 담당했던  저는 개발자들과 소통하고 ", "contentcls":"content", "content2":"피드백을  받으며  작업을   진행했습니다.  완성된 디자인이 하나의 화면으로  끝나지 않고 ", "content3":"사용자에 의해 동적으로  움직이는 것은  큰 감명으로 다가와  디자인을 병행하는 ","content4":"프론트엔드가  되고 싶다는 목표를 가지게 되었습니다."}
+        ],
+        "template":[
+            {"id":"1","title":"Template Design", "cls":"template", "content":"사용자가 커스텀하여 사용할 수 있도록 제작한 템플릿 작업물입니다.", "img":"./asset/template.png","alt":"템플릿 디자인 모음 이미지", "imgcls":"timg", "buttonname":"More", "buttonimg2":"./asset/more_arrow.png", "buttonalt2":"버튼 화살표 이미지(흰색)", "buttonimg1":"./asset/more_arrow_black.png", "buttonalt1":"버튼 화살표 이미지(검정)","buttoncls1":"show", "buttoncls2":"hidden"}
+        ],
+        "app":[
+            {"id":"1","title":"App Design","cls":"app", "content":"안전과 관련된 앱 디자인 작업물입니다.", "img":"./asset/app.png","alt":"앱 디자인 모음 이미지", "imgcls":"timg", "buttonname":"More", "buttonimg2":"./asset/more_arrow.png", "buttonalt2":"버튼 화살표 이미지(흰색)", "buttonimg1":"./asset/more_arrow_black.png", "buttonalt1":"버튼 화살표 이미지(검정)", "buttoncls1":"show", "buttoncls2":"hidden"}
+        ],
+        "web":[
+            {"id":"1","title":"Web Coding", "cls":"web", "content":"리액트와 그누보드를 사용하여 제작한 웹앱 / 웹페이지입니다.", "img1":"./asset/pc_img1.png","imgcls":"timg", "alt1":"바이닐 레코드 사이트 웹 코딩 이미지", "img2":"./asset/pc_img2.png","alt2":"헬로우 피자 웹 코딩 이미지", "img3":"./asset/pc_img3.png","alt1":"나이키 리디자인 웹 코딩 이미지","buttonname":"More", "buttonimg2":"./asset/more_arrow.png", "buttonalt2":"버튼 화살표 이미지(흰색)", "buttonimg1":"./asset/more_arrow_black.png", "buttonalt1":"버튼 화살표 이미지(검정)", "buttoncls1":"show", "buttoncls2":"hidden"}
         ]
     }
 }

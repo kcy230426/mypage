@@ -1,6 +1,7 @@
 import '../scss/my.scss'
 import mainarrow from '../asset/main_arrow.png'
 import About from '../component/About'
+import Portfolio from '../component/Portfolio'
 import data from '../db/data.json'
 
 const Main = ()=>{
@@ -14,6 +15,7 @@ return(
             </ul>
         </section>
         <About dbprofile={data.db}></About>
+        <Portfolio dbport={data.db}></Portfolio>
     </main>
 )
 }
