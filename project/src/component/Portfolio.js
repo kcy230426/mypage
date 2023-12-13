@@ -41,9 +41,23 @@ const Portfolio = (props)=>{
                 <ul key={v.id} className={v.cls}>
                     <li><h3>{v.title}</h3></li>
                     <li><p>{v.content}</p></li>
-                    <li className={v.imgcls}>
+                    <li>
                         <Swiper>
-
+                            <SwiperSlide>
+                                <ul>
+                                <li className='d-flex'>
+                                    <div>
+                                        <h3>Hello pizza</h3>
+                                        <p>그누보드로 제작한 피자 브랜드 컨셉 홈페이지</p>
+                                        <p>디스플레이 화면 클릭시 이동합니다.</p>
+                                        <button><img src="" alt="" /></button>
+                                        <button><img src="" alt="" /></button>
+                                        <button><img src="" alt="" /></button>
+                                    </div>
+                                    <img src={v.img1} alt={v.imgalt1} />
+                                    </li>
+                                </ul>
+                            </SwiperSlide>
                         </Swiper>
                     </li>
                     <li><button>More<img className={v.buttoncls1} src={v.buttonimg1} alt={v.buttonalt1} /><img className={v.buttoncls2} src={v.buttonimg2} alt={v.buttonalt2} /></button></li>
