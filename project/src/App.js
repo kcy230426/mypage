@@ -3,6 +3,7 @@ import Header from './layout/Header'
 import Main from './layout/Main'
 import Footer from './layout/Footer'
 import data from './db/data.json'
+import About from './component/About.js'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
           <Header dbnav={data.db}></Header>
           <Main></Main>
+          {/* <About dbprofile={data.db}></About> */}
           <Footer></Footer>
     </div>
   );

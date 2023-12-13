@@ -8,10 +8,10 @@
         ],
     
         "profile":[
-                {"id":"1", "contents":"김채연", "cls":"name"},
-                {"id":"2", "contents":"1995. 12. 30", "cls":"birthday"},
-                {"id":"3", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
-                {"id":"4", "contents":"purple_galaxy@naver.com", "cls":"email"}
+                {"id":"1", "icon":"/asset/name_icon.png", "alt":"이름 아이콘", "contents":"김채연", "cls":"name"},
+                {"id":"2", "icon":"/asset/date_icon.png", "alt":"날짜 아이콘", "contents":"1995. 12. 30",   "cls":"birthday"},
+                {"id":"3", "icon":"/asset/locate_icon.png", "alt":"위치 아이콘", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
+                {"id":"4", "icon":"/asset/email_icon.png", "alt":"이메일 아이콘", "contents":"purple_galaxy@naver.com", "cls":"email"}
             ],
 
         "timeline":[
@@ -33,6 +33,9 @@
         "soso":[
                 {"id":"1", "contents1":"40", "contents2":"%", "icon":"./asset/yellow_arrow.png", "img1":"./asset/pre.png", "alt1":"프리미어 아이콘", "img2":"./asset/ae.png", "alt2":"애프터 이펙트 아이콘", "img3":"./asset/sql.png", "alt3":"mySql 아이콘", "img4":"./asset/node.png", "alt4":"노드 아이콘", "img5":"./asset/php.png", "alt5":"php 아이콘", "numbercls":"number", "arrowcls":"arrow"}
 
-            ]
+            ],
+        "motive":[
+            {"id":"1", "imgcls":"image", "img":"./asset/moti_img.png", "alt":"앱 디자인 이미지", "title":"Motivation", "content1":"직장에서 앱 제작 프로젝트의 디자인을 담당했던  저는 개발자들과 소통하고 ", "contentcls":"content", "content2":"피드백을  받으며  작업을   진행했습니다.  완성된 디자인이 하나의 화면으로  끝나지 않고 ", "content3":"사용자에 의해 동적으로  움직이는 것은  큰 감명으로 다가와  디자인을 병행하는 ","content4":"프론트엔드가  되고 싶다는 목표를 가지게 되었습니다."}
+        ]
     }
 }
