@@ -86,10 +86,7 @@ const About = (props)=>{
                     <li className={v.imgcls}><img src={v.img} alt={v.alt} /></li>
                     <li>
                         <h3>{v.title}</h3>
-                        <p>{v.content1}</p>
-                        <p>{v.content2}</p>
-                        <p>{v.content3}</p>
-                        <p>{v.content4}</p>
+                        <p>{v.content1}<br/>{v.content2}<br/>{v.content3}<br/>{v.content4}</p>
                     </li>
                 </ul>
             ))}
