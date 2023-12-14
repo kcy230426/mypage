@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const Portfolio = (props)=>{
     const data = props.dbport
@@ -44,7 +44,7 @@ const Portfolio = (props)=>{
                     <li><h3>{v.title}</h3></li>
                     <li className='titleinfo'><p>{v.content}</p></li>
                     <li className='contents'>
-                        <Swiper className="swiper" spaceBetween={0} slidesPerView={1} pagination={{ clickable: true }} autoplay={{ delay: 8000, disableOnInteraction: false,}} modules={[Autoplay, Pagination]}  loop={true}>
+                        <Swiper className="swiper" spaceBetween={0} slidesPerView={1} pagination={{ clickable: true }} autoplay={{ delay: 8000, disableOnInteraction: false,}} modules={[Pagination]}  loop={true}>
                         {Object.keys(webbox).map((category)=>(
                             <SwiperSlide key={category}>
                             <ul>
@@ -54,13 +54,13 @@ const Portfolio = (props)=>{
                                     <li><h3>{v.title}</h3></li>
                                     <li><p>{v.contents1}</p></li>
                                     <li><p>{v.contents2}</p></li>
-                                    <li className='d-flex align-items-center'>
-                                        <button className={v.buttoncls}><img src={v.img1} alt={v.imgalt1} /></button>
-                                        <button className={v.buttoncls}><img src={v.img2} alt={v.imgalt2} /></button>
-                                        <button className={v.buttoncls}><img src={v.img3} alt={v.imgalt3} /></button>
+                                    <li className='d-flex justify-contents-center align-items-center'>
+                                        <button className={v.buttoncls}><a href={v.link1} target="_blank" alt={v.linkalt1}><img src={v.img1} alt={v.imgalt1} /></a></button>
+                                        <button className={v.buttoncls}><a href={v.link2} target="_blank" alt={v.linkalt2}><img src={v.img2} alt={v.imgalt2} /></a></button>
+                                        <button className={v.buttoncls}><a href={v.link3} target="_blank" alt={v.linkalt3}><img src={v.img3} alt={v.imgalt3} /></a></button>
                                     </li>
                                 </ul>
-                                <img className={v.pcls} src={v.pimg} alt={v.palt} />
+                                <a href={v.alink} target="_blank" alt={v.aalt}><img className={v.pcls} src={v.pimg} alt={v.palt} /></a>
                                 </li>
                             ))}
                             </ul>
