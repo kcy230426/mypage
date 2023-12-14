@@ -15,7 +15,7 @@ return(
             </ul>
         </section>
         <About dbprofile={data.db}></About>
-        <Portfolio dbport={data.db}></Portfolio>
+        <Portfolio dbport={data.db} dbwebbox={data.db}></Portfolio>
     </main>
 )
 }

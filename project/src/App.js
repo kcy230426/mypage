@@ -11,7 +11,6 @@ function App() {
     <div>
           <Header dbnav={data.db}></Header>
           <Main></Main>
-          {/* <About dbprofile={data.db}></About> */}
           <Footer></Footer>
     </div>
   );
