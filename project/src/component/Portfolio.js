@@ -46,7 +46,7 @@ const Portfolio = (props)=>{
                     <li><h3>{v.title}</h3></li>
                     <li className='titleinfo'><p>{v.content}</p></li>
                     <li className='contents'>
-                        <Swiper className="swiper" spaceBetween={0} slidesPerView={1} pagination={{ clickable: true }} autoplay={{ delay: 8000, disableOnInteraction: false,}} modules={[Pagination, Autoplay, Navigation]}  loop={true}>
+                        <Swiper className="swiper" spaceBetween={0} slidesPerView={1} pagination={{ clickable: true }} autoplay={{ delay: 8000, disableOnInteraction: false,}} modules={[Pagination, Autoplay, Navigation]} navigation={true} loop={true}>
                         {Object.keys(webbox).map((category)=>(
                             <SwiperSlide key={category}>
                             <ul>
@@ -63,8 +63,6 @@ const Portfolio = (props)=>{
                                     </li>
                                 </ul>
                                 <a href={v.alink} target="_blank" alt={v.aalt}><img className={v.pcls} src={v.pimg} alt={v.palt} /></a>
-                                <div className="swiper-button-prev"></div>
-                                <div className="swiper-button-next"></div>
                                 </li>
                             ))}
                             </ul>
