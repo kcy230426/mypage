@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
           <Header dbnav={data.db}></Header>
-          <Main></Main>
-          <Footer></Footer>
+          <Main dbmain={data.db}></Main>
+          <Footer dbft={data.db}></Footer>
     </div>
   );
 }

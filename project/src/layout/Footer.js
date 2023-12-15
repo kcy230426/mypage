@@ -1,14 +1,16 @@
 import '../scss/my.scss'
-import ftlogo from '../asset/ft_logo.svg'
 
-const Footer = ()=>{
+const Footer = (props)=>{
+    const data = props.dbft
     return(
         <footer id="ft">
-            <ul>
-                <li className="logo"><img src={ftlogo} alt="하단 로고" /></li>
-                <li className="content1">Thank for your Reading!</li>
-                <li className="content2">Copyright 2023. Kim chaeyeon’s Portfolio</li>
+            {data.footer.map((v,i)=>(
+                <ul key={v.id}>
+                    <li className="logo"><img src={v.img} alt={v.imgalt} /></li>
+                    <li className={v.cls1}>{v.contents1}</li>
+                    <li className={v.cls2}>{v.contents2}</li>
             </ul>
+            ))}
         </footer>
     )
 }
