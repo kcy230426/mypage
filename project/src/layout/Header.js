@@ -31,7 +31,8 @@ const Header = (props) =>{
                         <ul>
                             {
                                 data.nav.map((v,i)=>(
-                                    <li key={v.id} className={v.cls}>{v.title}
+                                    <li key={v.id} className={v.cls}>
+                                        <a href={v.href}>{v.title}</a>
                                         <div className="graphic">
                                             <div className="circle1"></div>
                                             <div className="circle2"></div>
