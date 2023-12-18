@@ -1,7 +1,22 @@
+import react, {useRef} from 'react'
 import '../scss/my.scss'
+import emailjs from '@emailjs/browser'
 
 const Contact = (props)=>{
     const data = props.dbcontact
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('kcy230426', 'template_k087mkn', form.current, '3QZxQRsJIxHvINpby')
+      .then((result) => {
+          alert("전송이 완료되었습니다.");
+      }, (error) => {
+          alert("전송이 실패했습니다")
+          console.log(error.text);
+      });}
+
     return(
         <section id="contact">
             <ul className="title">
@@ -19,19 +34,19 @@ const Contact = (props)=>{
                             <img className={v.imgcls1} src={v.img1} alt={v.imgalt1} />
                             <img className={v.imgcls2} src={v.img2} alt={v.imgalt2} />
                         </figure>
-                        <form action="submit" id='form'>
+                        <form ref={form} onSubmit={sendEmail} id='form'>
                             <label htmlFor="nameField">{v.title1}</label>
-                            <input type="text" id="nameField" placeholder={v.contents1}/>
+                            <input type="text" id="nameField" name="user_name" placeholder={v.contents1}/>
                             <label htmlFor="selectField">{v.title2}</label>
-                            <select name="job" id="selectField" className={v.optioncls}>
-                                <option value="">{v.contents2}</option>
-                                <option value="" >프론트엔드</option>
-                                <option value="">퍼블리셔</option>
-                                <option value="">UI&UX 디자인</option>
-                                <option value="">기타</option>
+                            <select name="user_select" id="selectField" className={v.optioncls}>
+                                <option value="blank" >{v.contents2}</option>
+                                <option value="프론트엔드" name="user_select">프론트엔드</option>
+                                <option value="퍼블리셔" name="user_select">퍼블리셔</option>
+                                <option value="UI / UX 디자인" name="user_select">UI&UX 디자인</option>
+                                <option value="기타" name="user_select">기타</option>
                             </select>
-                            <label htmlFor="titleField">{v.title3}</label>
-                            <input type="text" id="titleField" placeholder={v.contents3} />
+                            <label htmlFor="emailField">{v.title3}</label>
+                            <input type="text" id="emailField" name="user_email" placeholder={v.contents3} />
                             <label htmlFor="textField">{v.title4}</label>
                                 <textarea name="message" id="textField" placeholder={v.contents4}>
                                 </textarea>
