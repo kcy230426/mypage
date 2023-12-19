@@ -11,9 +11,9 @@ const Contact = (props)=>{
 
     emailjs.sendForm('kcy230426', 'template_k087mkn', form.current, '3QZxQRsJIxHvINpby')
       .then((result) => {
-          alert("전송이 완료되었습니다.");
+          alert("폼 제출이 완료되었습니다.");
       }, (error) => {
-          alert("전송이 실패했습니다")
+          alert("폼 제출이 실패했습니다")
           console.log(error.text);
       });}
 
