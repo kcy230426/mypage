@@ -5,6 +5,7 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const Portfolio = (props)=>{
     const data = props.dbport
@@ -26,7 +27,7 @@ const Portfolio = (props)=>{
                     <li><h3>{v.title}</h3></li>
                     <li><p>{v.content}</p></li>
                     <li className={v.imgcls}><img src={v.img} alt={v.alt} /></li>
-                    <li><button className={v.buttoncls0}>More<img className={v.buttoncls1} src={v.buttonimg1} alt={v.buttonalt1} /><img className={v.buttoncls2} src={v.buttonimg2} alt={v.buttonalt2} /></button></li>
+                    <li><Link to="/template"><button className={v.buttoncls0}>More<img className={v.buttoncls1} src={v.buttonimg1} alt={v.buttonalt1} /><img className={v.buttoncls2} src={v.buttonimg2} alt={v.buttonalt2} /></button></Link></li>
             </ul>
             ))
         }
