@@ -4,17 +4,17 @@
             {"id":"1","title":"Welcome to","stitle":"Kcy's Portfolio","spancls1":"mobile","contents1":"신입 개발자 김채연의 자기소개서","contents2":"페이지에 오신 것을 환영합니다.","spancls2":"mobile","img":"./asset/main_arrow.svg","imgalt":"하단 안내 그래픽"}
         ],
         "nav":[
-            {"id":"1", "href":"#hd", "title":"HOME", "cls":"li1"},
-            {"id":"2", "href":"#about","title":"ABOUT", "cls":"li2"},
-            {"id":"3", "href":"#portfolio","title":"PORTFOLIO", "cls":"li3"},
-            {"id":"4", "href":"#contact", "title":"CONTACT", "cls":"li4"}
+            {"id":"1", "href":"/", "title":"HOME", "cls":"li1"},
+            {"id":"2", "href":"/","title":"ABOUT", "cls":"li2"},
+            {"id":"3", "href":"/","title":"PORTFOLIO", "cls":"li3"},
+            {"id":"4", "href":"/", "title":"CONTACT", "cls":"li4"}
         ],
     
         "profile":[
                 {"id":"1", "icon":"/asset/name_icon.png", "alt":"이름 아이콘", "contents":"김채연", "cls":"name"},
                 {"id":"2", "icon":"/asset/date_icon.png", "alt":"날짜 아이콘", "contents":"1995. 12. 30",   "cls":"birthday"},
                 {"id":"3", "icon":"/asset/locate_icon.png", "alt":"위치 아이콘", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
-                {"id":"4", "icon":"/asset/email_icon.png", "alt":"이메일 아이콘", "contents":"purple_galaxy@naver.com", "cls":"email"}
+                {"id":"4", "icon":"/asset/email_icon.png", "alt":"이메일 아이콘", "contents":"kcy230426@gmail.com", "cls":"email"}
             ],
 
         "timeline":[
