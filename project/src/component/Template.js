@@ -1,36 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../scss/my.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import 'swiper/swiper-bundle.css';
-import 'swiper/css/pagination'
-import 'swiper/css/autoplay'
-import { Navigation, Pagination } from 'swiper/modules';
-import img1 from '../asset/sign1.png'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
 
 const Template = (props)=>{
-    const data = props.dbtads
+
+    const [thumbnailIndex, setThumbnailIndex] = useState(0);
+    const data = props.dbtads;
+    const thumbnailImages = data.tads.map((v) => v.thumb);
+    const bigImages = data.tads.map((v) => v.img);
+    const imgAlts = data.tads.map((v) => v.imgalt);
+    const [swiperIndex, setSwiperIndex] = useState(0); 
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setThumbnailIndex((prevIndex) =>
+          prevIndex === thumbnailImages.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 6000);
+  
+      return () => clearInterval(interval);
+    }, [thumbnailImages.length]);
+  
+    const handleThumbnailClick = (index) => {
+      setThumbnailIndex(index);
+      setSwiperIndex(index);
+    };
+  
     const twoswiper = {
-        loop: false, // 루프 모드 비활성화
-        spaceBetween: 0,
-        slidesPerView: 'auto', // 보여지는 슬라이드 개수를 동적으로 조정
-        pagination: { type: 'fraction', clickable: true },
-        autoplay: { delay: 8000, disableOnInteraction: false },
-        modules: [Pagination, Navigation],
-        navigation: true,
-      };
+      loop: true,
+      spaceBetween: 0,
+      slidesPerView: 'auto',
+      navigation: true,
+      pagination: { type: 'fraction', clickable: true,
+     },
+      modules:[Pagination, Navigation, Autoplay],
+      autoplay:{
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChange: (swiper) => {
+          // Swiper 슬라이드가 변경될 때 swiperIndex 업데이트
+          setSwiperIndex(swiper.activeIndex);
+          setThumbnailIndex(swiper.activeIndex);
+        },
+      },  
+    };
 
-      const [selectedImage, setSelectedImage] = useState(img1);
-
-      const [selectedAlt, setSelectedAlt] = useState('썸네일1');
-
-      const handleThumbnailClick = (newImage) => {
-        setSelectedImage(newImage); // 선택된 이미지를 변경
-      };
-
-      const handleThumbnailAltClick = (newImage) => {
-        setSelectedImage(newImage); // 선택된 이미지를 변경
-      };
 
     return(
         <section id="template">
@@ -45,19 +64,13 @@ const Template = (props)=>{
                 ))}
             <ul id="display">
                             <li className='show'>
-                                <Swiper className="swiper" spaceBetween={0} slidesPerView={1} pagination={{ type:'fraction', clickable: true }} autoplay={{ delay: 8000, disableOnInteraction: false,}} modules={[Pagination]}>
-                                    {data.tads.map((v, i)=>(
-                                        <SwiperSlide key={v.id}>
-                                            <img className={v.imgcls} src={selectedImage} alt={selectedAlt} />
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
+                                            <img className="adsimg" src={bigImages[thumbnailIndex]} alt={imgAlts[thumbnailIndex]}/>
                             </li>
                             <li className='preview'>
                                 <Swiper {...twoswiper} className="swiper">
                                         {data.tads.map((v, i)=>(
                                             <SwiperSlide key={v.id}>
-                                                <img className={v.thumbcls} src={v.thumb} alt={v.thumbalt} onClick={() => handleThumbnailClick(v.img, v.alt)} />
+                                                <img className={v.thumbcls} src={v.thumb} alt={v.thumbalt} onClick={() => handleThumbnailClick(i)} />
                                             </SwiperSlide>
                                         ))}
                                 </Swiper>
