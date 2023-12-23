@@ -1,56 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../scss/my.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import {Navigation, Pagination, Autoplay, Controller} from 'swiper/modules'
+
 
 
 const Template = (props)=>{
 
-    const [thumbnailIndex, setThumbnailIndex] = useState(0);
     const data = props.dbtads;
-    const thumbnailImages = data.tads.map((v) => v.thumb);
-    const bigImages = data.tads.map((v) => v.img);
-    const imgAlts = data.tads.map((v) => v.imgalt);
-    const [swiperIndex, setSwiperIndex] = useState(0); 
-  
+
+    const firstSwiper  = useRef(null);
+    const secondSwiper = useRef(null);
+
+    const [thumbIndex, setThumbIndex] = useState(0);
+    const [mainIndex, setMainIndex] = useState(0);
+
     useEffect(() => {
-      const interval = setInterval(() => {
-        setThumbnailIndex((prevIndex) =>
-          prevIndex === thumbnailImages.length - 1 ? 0 : prevIndex + 1
-        );
-      }, 6000);
-  
-      return () => clearInterval(interval);
-    }, [thumbnailImages.length]);
-  
+        if (firstSwiper.current && secondSwiper.current) {
+            // 두 스와이퍼가 모두 초기화된 경우에 연동 설정
+            firstSwiper.current.controller.control = secondSwiper.current;
+            secondSwiper.current.controller.control = firstSwiper.current;
+        }
+    }, [firstSwiper, secondSwiper]); // 두 스와이퍼의 변경을 감지하여 실행
+
     const handleThumbnailClick = (index) => {
-      setThumbnailIndex(index);
-      setSwiperIndex(index);
+        if (secondSwiper.current !== undefined && secondSwiper.current !== null) {
+            // 썸네일 클릭 시 처리할 내용
+            // 예: setThumbIndex(index);
+            console.log(index);
+        }
     };
+
+    const handleMainClick = (index) => {
+        if (firstSwiper.current !== undefined && firstSwiper.current !== null) {
+            // 메인 이미지 클릭 시 처리할 내용
+            // 예: setMainIndex(index);
+            console.log(index);
+        }
+    };
+
   
-    const twoswiper = {
-      loop: true,
-      spaceBetween: 0,
-      slidesPerView: 'auto',
-      navigation: true,
-      pagination: { type: 'fraction', clickable: true,
-     },
-      modules:[Pagination, Navigation, Autoplay],
-      autoplay:{
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-      on: {
-        slideChange: (swiper) => {
-          // Swiper 슬라이드가 변경될 때 swiperIndex 업데이트
-          setSwiperIndex(swiper.activeIndex);
-          setThumbnailIndex(swiper.activeIndex);
-        },
-      },  
-    };
-
-
     return(
         <section id="template">
                 {data.tbar.map((v,i)=>(
@@ -64,13 +54,38 @@ const Template = (props)=>{
                 ))}
             <ul id="display">
                             <li className='show'>
-                                            <img className="adsimg" src={bigImages[thumbnailIndex]} alt={imgAlts[thumbnailIndex]}/>
-                            </li>
-                            <li className='preview'>
-                                <Swiper {...twoswiper} className="swiper">
+                            <Swiper 
+                                loop={false}
+                                modules={[Navigation, Pagination, Autoplay, Controller]}
+                                spaceBetween={0}
+                                slidesPerView={'auto'}
+                                onSwiper={(swiper) => (firstSwiper.current = swiper)} 
+                                controller={{ control: secondSwiper.current }}
+                                navigation
+                                slideToClickedSlide={true}
+                                className="swiper mainSwiper">
                                         {data.tads.map((v, i)=>(
                                             <SwiperSlide key={v.id}>
-                                                <img className={v.thumbcls} src={v.thumb} alt={v.thumbalt} onClick={() => handleThumbnailClick(i)} />
+                                                <img className={v.imgcls} src={v.img} alt={v.imgalt} onClick={() =>  handleMainClick(i)} />
+                                            </SwiperSlide>
+                                        ))}
+                                </Swiper>
+                            </li>
+                            <li className='preview'>
+                            <Swiper
+                                loop={false}
+                                modules={[Navigation, Pagination, Autoplay, Controller]}
+                                spaceBetween={0}
+                                slidesPerView={'auto'}
+                                autoplay={{delay:3000, disableOnInteraction: false}}
+                                navigation
+                                onSwiper={(swiper) => (secondSwiper.current = swiper)}
+                                controller={{ control: firstSwiper.current }}
+                                pagination={{ type: 'fraction', clickable: true }} slideToClickedSlide={true}
+                                className="swiper thumbSwiper">
+                                        {data.tads.map((v, i)=>(
+                                            <SwiperSlide key={v.id}>
+                                                <img className={v.thumbcls} src={v.thumb} alt={v.thumbalt} onClick={() =>  handleThumbnailClick(i)}/>
                                             </SwiperSlide>
                                         ))}
                                 </Swiper>
