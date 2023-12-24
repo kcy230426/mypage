@@ -3,6 +3,7 @@ import About from '../component/About'
 import Portfolio from '../component/Portfolio'
 import Contact from '../component/Contact'
 import data from '../db/data.json'
+import imgGallery from '../db/tads.json'
 
 const Main = (props)=>{
     const db = props.dbmain
@@ -18,7 +19,7 @@ return(
             ))}
         </section>
         <About dbprofile={data.db}></About>
-        <Portfolio dbport={data.db} dbwebbox={data.db}></Portfolio>
+        <Portfolio dbport={data.db} dbwebbox={data.db} ></Portfolio>
         <Contact dbcontact={data.db}></Contact>
     </main>
 )
