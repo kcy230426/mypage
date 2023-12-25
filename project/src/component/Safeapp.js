@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../scss/my.scss'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
 
 
-const Template = (props)=>{
+const Safeapp = (props)=>{
 
     const data = props.dbtads;
 
@@ -18,7 +18,7 @@ const Template = (props)=>{
 
     const [menu, setMenu] = useState('');
 
-    const [activeButton, setActiveButton] = useState('events');
+    const [activeButton, setActiveButton] = useState('');
 
     let menuContent;
 
@@ -54,7 +54,7 @@ const Template = (props)=>{
 
     return(
         <section id="template">
-                    {data.tbar.map((v,i)=>(
+                    {data.sbar.map((v,i)=>(
                     <ul id="bar" key={v.id}>
                         <li>{v.title}</li>
                         <li>
@@ -72,4 +72,4 @@ const Template = (props)=>{
     )
 }
 
-export default Template;
+export default Safeapp;

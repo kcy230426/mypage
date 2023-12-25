@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main dbmain={data.db}></Main>}></Route>
             <Route path='/template' element={<Template dbtads={data.db} dbgal1={dbads.tads} dbgal2={dbmenu.tmenu} ></Template>}></Route>
+            <Route path='/safeapp' element={<Template dbtads={data.db} dbgal1={dbads.tads} dbgal2={dbmenu.tmenu} ></Template>}></Route>
           </Routes>
           <Footer dbft={data.db}></Footer>
     </HashRouter>
