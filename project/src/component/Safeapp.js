@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import '../scss/my.scss'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -7,10 +7,6 @@ import "react-image-gallery/styles/css/image-gallery.css"
 const Safeapp = (props)=>{
 
     const data = props.dbtads;
-
-    const tads = props.dbgal1;
-
-    const tmenu = props.dbgal2;
 
     const images = props.dbgal1;
 
@@ -22,15 +18,15 @@ const Safeapp = (props)=>{
 
     let menuContent;
 
-    if (menu === 'events') {
+    if (menu === 'edu') {
         menuContent = (
         <div>
-            <ImageGallery items={images} infinite='true'/>
+            <ImageGallery items={images} infinite='true' />
         </div>
         );
-    } else if (menu === 'menus') {
+    } else if (menu === 'worker') {
         menuContent = (
-        <div>
+        <div className='worker'>
              <ImageGallery items={images2} infinite='true'/>
         </div>
         );
@@ -42,15 +38,18 @@ const Safeapp = (props)=>{
         );
     }
 
-    const handleEventsButtonClick = () => {
+    const handleEduButtonClick = () => {
         setActiveButton('edu');
         setMenu('edu');
       };
 
-    const handleMenusButtonClick = () => {
+    const handleWorkerButtonClick = () => {
         setActiveButton('worker');
         setMenu('worker');
       };
+
+
+      
 
     return(
         <section id="safeapp">
@@ -58,8 +57,8 @@ const Safeapp = (props)=>{
                     <ul id="bar" key={v.id}>
                         <li>{v.title}</li>
                         <li>
-                            <button onClick={handleEventsButtonClick} className={`${v.btn1cls} ${activeButton === 'edu' ? 'active' : ' '}`}>{v.btn1}</button>
-                             <button onClick={handleMenusButtonClick} className={`${v.btn2cls} ${activeButton === 'worker' ? 'active' : ' '}`}>{v.btn2}</button>
+                            <button onClick={handleEduButtonClick} className={`${v.btn1cls} ${activeButton === 'edu' ? 'active' : ' '}`}>{v.btn1}</button>
+                             <button onClick={handleWorkerButtonClick} className={`${v.btn2cls} ${activeButton === 'worker' ? 'active' : ' '}`}>{v.btn2}</button>
                         </li>
                     </ul>
                     ))}
