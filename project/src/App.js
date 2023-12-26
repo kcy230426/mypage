@@ -4,10 +4,10 @@ import Header from './layout/Header'
 import Main from './layout/Main'
 import Footer from './layout/Footer'
 import data from './db/data.json'
-import About from './component/About.js'
 import Template from './component/Template'
 import dbads from './db/tads.json'
 import dbmenu from './db/tmenu.json'
+import Safeapp from './component/Safeapp'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main dbmain={data.db}></Main>}></Route>
             <Route path='/template' element={<Template dbtads={data.db} dbgal1={dbads.tads} dbgal2={dbmenu.tmenu} ></Template>}></Route>
-            <Route path='/safeapp' element={<Template dbtads={data.db} dbgal1={dbads.tads} dbgal2={dbmenu.tmenu} ></Template>}></Route>
+            <Route path='/safeapp' element={<Safeapp dbtads={data.db} dbgal1={dbads.tads} dbgal2={dbmenu.tmenu} ></Safeapp>}></Route>
           </Routes>
           <Footer dbft={data.db}></Footer>
     </HashRouter>

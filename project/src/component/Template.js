@@ -8,10 +8,6 @@ const Template = (props)=>{
 
     const data = props.dbtads;
 
-    const tads = props.dbgal1;
-
-    const tmenu = props.dbgal2;
-
     const images = props.dbgal1;
 
     const images2 = props.dbgal2;

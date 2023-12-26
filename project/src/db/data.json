@@ -55,7 +55,7 @@
             "nike":[{"id":"3","title":"<Nike>","contents1":"리액트로 제작한 나이키 리디자인 홈페이지","contents2":"디스플레이 화면 클릭시 이동합니다.","buttoncls":"btnlast","img1":"./asset/figma.png","imgalt1":"피그마 아이콘","img2":"./asset/github.png","imgalt2":"깃 허브 아이콘", "pimg":"./asset/pc_img3.png","pcls":"timg", "palt":"나이키 리디자인 웹 코딩 이미지", "link1":"https://www.figma.com/file/xm5ByjUGT5jfTqv24XFg0T/%EB%82%98%EC%9D%B4%ED%82%A4-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%95%88?type=design&mode=design&t=8x1hUSxuSCvPoPgn-1","linkalt1":"나이키 피그마 링크", "link2":"https://github.com/kcy230426/redesign","linkalt2":"나이키 깃허브 링크","alink":"https://kcy230426.github.io/redesign/","aalt":"나이키 리디자인 링크"}]
         },
         "tbar":[{"id":"1","title":"Template Design","btn1":"광고/이벤트","btn1cls":"btn1","btn2":"메뉴보드","btn2cls":"btn2"}],
-        "sbar":[{"id":"1","title":"App Design","btn1":"안전교육","btn1cls":"안전 근로자","btn2":"메뉴보드","btn2cls":"btn2"}],
+        "sbar":[{"id":"1","title":"App Design","btn1":"안전교육","btn1cls":"btn1","btn2":"안전 근로자","btn2cls":"btn2"}],
         "contact":[{"id":"1", "title1":"Name","contents1":"회사명/성함을 입력해주세요","title2":"job","contents2":"제안 분야를 선택해주세요","title3":"Email","contents3":"이메일을 입력해주세요","title4":"Message","contents4":"내용을 입력해주세요","button":"Send","titlecls":"title","contentscls":"contents","buttoncls":"submit", "img1":"./asset/contact.png","imgalt1":"콘택트 섹션 꾸밈 이미지",  "img2":"./asset/m_contact.png", "imgalt2":"콘택트 섹션 꾸밈 이미지", "imgcls1":"pc", "imgcls2":"mobile", "optioncls":"select"}],
         "footer":[{"id":"1","img":"./asset/f_logo.svg","imgalt":"하단 로고","contents1":"Thank for your Visiting!","contents2":"Copyright 2023. Kim chaeyeon’s Portfolio","cls1":"content1","cls2":"content2"}]
     }
