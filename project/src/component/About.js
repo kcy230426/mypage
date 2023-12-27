@@ -10,7 +10,7 @@ const About = (props)=>{
     useEffect(() => {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           AOS.init({
-            duration: 1000,
+            duration: 1200,
             easing: 'ease-in-out',
             once: false
           });
