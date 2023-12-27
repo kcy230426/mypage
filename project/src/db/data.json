@@ -11,10 +11,10 @@
         ],
     
         "profile":[
-                {"id":"1", "icon":"/asset/name_icon.png", "alt":"이름 아이콘", "contents":"김채연", "cls":"name"},
-                {"id":"2", "icon":"/asset/date_icon.png", "alt":"날짜 아이콘", "contents":"1995. 12. 30",   "cls":"birthday"},
-                {"id":"3", "icon":"/asset/locate_icon.png", "alt":"위치 아이콘", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
-                {"id":"4", "icon":"/asset/email_icon.png", "alt":"이메일 아이콘", "contents":"kcy230426@gmail.com", "cls":"email"}
+                {"id":"1", "icon":"./asset/name_icon.png", "alt":"이름 아이콘", "contents":"김채연", "cls":"name"},
+                {"id":"2", "icon":"./asset/date_icon.png", "alt":"날짜 아이콘", "contents":"1995. 12. 30",   "cls":"birthday"},
+                {"id":"3", "icon":"./asset/locate_icon.png", "alt":"위치 아이콘", "contents":"경기도 성남시 분당구 거주", "cls":"where"},
+                {"id":"4", "icon":"./asset/email_icon.png", "alt":"이메일 아이콘", "contents":"kcy230426@gmail.com", "cls":"email"}
             ],
 
         "timeline":[
