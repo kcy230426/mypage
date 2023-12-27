@@ -8,7 +8,8 @@ const Header = (props) =>{
 
     const [isScrolled, setIsScrolled] = useState(false);
 
-    const location = window.location.hash;
+
+    // 스크롤 픽스
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,14 +24,7 @@ const Header = (props) =>{
         };
       }, []);
 
-      useEffect(() => {
-        if (location.hash) {
-          const element = document.querySelector(location.hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
-      }, [location]);
+      
 
     return(
         <header id="hd" className={`${isScrolled ? 'scroll' : ''}`}>
