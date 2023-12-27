@@ -15,15 +15,13 @@ const Portfolio = (props)=>{
     const webbox = props.dbwebbox.webbox
 
     useEffect(() => {
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          // 모바일 장치가 아닌 경우에만 AOS 초기화
           AOS.init({
             duration: 1200,
             easing: 'ease-in-out',
-            once: false
+            once: false,
+            disable: 'mobile'
             // 추가적인 설정들...
           });
-        }
       }, []);
 
     return(
