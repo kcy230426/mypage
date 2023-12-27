@@ -1,10 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../scss/my.scss'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
 
 
 const Safeapp = (props)=>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     const data = props.dbtads;
 

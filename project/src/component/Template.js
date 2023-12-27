@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../scss/my.scss'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -6,6 +6,10 @@ import "react-image-gallery/styles/css/image-gallery.css"
 
 const Template = (props)=>{
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
     const data = props.dbtads;
 
     const images = props.dbgal1;
