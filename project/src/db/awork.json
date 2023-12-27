@@ -1,92 +1,92 @@
 {"awork":[
     {
         "id":"0",
-        "original":"../asset/appw1.png",
-        "thumbnail":"../asset/appw1.png",
+        "original":"./asset/appw1.png",
+        "thumbnail":"./asset/appw1.png",
         "originalAlt":"안전 근로자 오리지널 1번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 1번 이미지"
     },
     {
         "id":"1",
-        "original":"../asset/appw2.png",
-        "thumbnail":"../asset/appw2.png",
+        "original":"./asset/appw2.png",
+        "thumbnail":"./asset/appw2.png",
         "originalAlt":"안전 근로자 오리지널 2번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 2번 이미지"
     },
     {
         "id":"2",
-        "original":"../asset/appw3.png",
-        "thumbnail":"../asset/appw3.png",
+        "original":"./asset/appw3.png",
+        "thumbnail":"./asset/appw3.png",
         "originalAlt":"안전 근로자 오리지널 3번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 3번 이미지"
     },
     {
         "id":"3",
-        "original":"../asset/appw4.png",
-        "thumbnail":"../asset/appw4.png",
+        "original":"./asset/appw4.png",
+        "thumbnail":"./asset/appw4.png",
         "originalAlt":"안전 근로자 오리지널 4번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 4번 이미지"
     },
     {
         "id":"4",
-        "original":"../asset/appw5.png",
-        "thumbnail":"../asset/appw5.png",
+        "original":"./asset/appw5.png",
+        "thumbnail":"./asset/appw5.png",
         "originalAlt":"안전 근로자 오리지널 5번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 5번 이미지"
     },
     {
         "id":"5",
-        "original":"../asset/appw6.png",
-        "thumbnail":"../asset/appw6.png",
+        "original":"./asset/appw6.png",
+        "thumbnail":"./asset/appw6.png",
         "originalAlt":"안전 근로자 오리지널 6번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 6번 이미지"
     },
     {
         "id":"6",
-        "original":"../asset/appw7.png",
-        "thumbnail":"../asset/appw7.png",
+        "original":"./asset/appw7.png",
+        "thumbnail":"./asset/appw7.png",
         "originalAlt":"안전 근로자 오리지널 7번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 7번 이미지"
     },
     {
         "id":"7",
-        "original":"../asset/appw8.png",
-        "thumbnail":"../asset/appw8.png",
+        "original":"./asset/appw8.png",
+        "thumbnail":"./asset/appw8.png",
         "originalAlt":"안전 근로자 오리지널 8번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 8번 이미지"
     },
     {
         "id":"8",
-        "original":"../asset/appw9.png",
-        "thumbnail":"../asset/appw9.png",
+        "original":"./asset/appw9.png",
+        "thumbnail":"./asset/appw9.png",
         "originalAlt":"안전 근로자 오리지널 9번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 9번 이미지"
     },
     {
         "id":"9",
-        "original":"../asset/appw10.png",
-        "thumbnail":"../asset/appw10.png",
+        "original":"./asset/appw10.png",
+        "thumbnail":"./asset/appw10.png",
         "originalAlt":"안전 근로자 오리지널 10번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 10번 이미지"
     },
     {
         "id":"10",
-        "original":"../asset/appw11.png",
-        "thumbnail":"../asset/appw11.png",
+        "original":"./asset/appw11.png",
+        "thumbnail":"./asset/appw11.png",
         "originalAlt":"안전 근로자 오리지널 11번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 11번 이미지"
     },
     {
         "id":"11",
-        "original":"../asset/appw12.png",
-        "thumbnail":"../asset/appw12.png",
+        "original":"./asset/appw12.png",
+        "thumbnail":"./asset/appw12.png",
         "originalAlt":"안전 근로자 오리지널 12번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 12번 이미지"
     },
     {
         "id":"12",
-        "original":"../asset/appw13.png",
-        "thumbnail":"../asset/appw13.png",
+        "original":"./asset/appw13.png",
+        "thumbnail":"./asset/appw13.png",
         "originalAlt":"안전 근로자 오리지널 13번 이미지",
         "thumbnailAlt":"안전 근로자 썸네일 13번 이미지"
     }

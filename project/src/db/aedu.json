@@ -1,99 +1,99 @@
 {"aedu":[
     {
         "id":"0",
-        "original":"../asset/app1.png",
-        "thumbnail":"../asset/app1.png",
+        "original":"./asset/app1.png",
+        "thumbnail":"./asset/app1.png",
         "originalAlt":"안전교육 오리지널 1번 이미지",
         "thumbnailAlt":"안전교육 썸네일 1번 이미지"
     },
     {
         "id":"1",
-        "original":"../asset/app2.png",
-        "thumbnail":"../asset/app2.png",
+        "original":"./asset/app2.png",
+        "thumbnail":"./asset/app2.png",
         "originalAlt":"안전교육 오리지널 2번 이미지",
         "thumbnailAlt":"안전교육 썸네일 2번 이미지"
     },
     {
         "id":"2",
-        "original":"../asset/app3.png",
-        "thumbnail":"../asset/app3.png",
+        "original":"./asset/app3.png",
+        "thumbnail":"./asset/app3.png",
         "originalAlt":"안전교육 오리지널 3번 이미지",
         "thumbnailAlt":"안전교육 썸네일 3번 이미지"
     },
     {
         "id":"3",
-        "original":"../asset/app4.png",
-        "thumbnail":"../asset/app4.png",
+        "original":"./asset/app4.png",
+        "thumbnail":"./asset/app4.png",
         "originalAlt":"안전교육 오리지널 4번 이미지",
         "thumbnailAlt":"안전교육 썸네일 4번 이미지"
     },
     {
         "id":"4",
-        "original":"../asset/app5.png",
-        "thumbnail":"../asset/app5.png",
+        "original":"./asset/app5.png",
+        "thumbnail":"./asset/app5.png",
         "originalAlt":"안전교육 오리지널 5번 이미지",
         "thumbnailAlt":"안전교육 썸네일 5번 이미지"
     },
     {
         "id":"5",
-        "original":"../asset/app6.png",
-        "thumbnail":"../asset/app6.png",
+        "original":"./asset/app6.png",
+        "thumbnail":"./asset/app6.png",
         "originalAlt":"안전교육 오리지널 6번 이미지",
         "thumbnailAlt":"안전교육 썸네일 6번 이미지"
     },
     {
         "id":"6",
-        "original":"../asset/app7.png",
-        "thumbnail":"../asset/app7.png",
+        "original":"./asset/app7.png",
+        "thumbnail":"./asset/app7.png",
         "originalAlt":"안전교육 오리지널 7번 이미지",
         "thumbnailAlt":"안전교육 썸네일 7번 이미지"
     },
     {
         "id":"7",
-        "original":"../asset/app8.png",
-        "thumbnail":"../asset/app8.png",
+        "original":"./asset/app8.png",
+        "thumbnail":"./asset/app8.png",
         "originalAlt":"안전교육 오리지널 8번 이미지",
         "thumbnailAlt":"안전교육 썸네일 8번 이미지"
     },
     {
         "id":"8",
-        "original":"../asset/app9.png",
-        "thumbnail":"../asset/app9.png",
+        "original":"./asset/app9.png",
+        "thumbnail":"./asset/app9.png",
         "originalAlt":"안전교육 오리지널 9번 이미지",
         "thumbnailAlt":"안전교육 썸네일 9번 이미지"
     },
     {
         "id":"9",
-        "original":"../asset/app10.png",
-        "thumbnail":"../asset/app10.png",
+        "original":"./asset/app10.png",
+        "thumbnail":"./asset/app10.png",
         "originalAlt":"안전교육 오리지널 10번 이미지",
         "thumbnailAlt":"안전교육 썸네일 10번 이미지"
     },
     {
         "id":"10",
-        "original":"../asset/app11.png",
-        "thumbnail":"../asset/app11.png",
+        "original":"./asset/app11.png",
+        "thumbnail":"./asset/app11.png",
         "originalAlt":"안전교육 오리지널 11번 이미지",
         "thumbnailAlt":"안전교육 썸네일 11번 이미지"
     },
     {
         "id":"11",
-        "original":"../asset/app12.png",
-        "thumbnail":"../asset/app12.png",
+        "original":"./asset/app12.png",
+        "thumbnail":"./asset/app12.png",
         "originalAlt":"안전교육 오리지널 12번 이미지",
         "thumbnailAlt":"안전교육 썸네일 12번 이미지"
     },
     {
         "id":"12",
-        "original":"../asset/app13.png",
-        "thumbnail":"../asset/app13.png",
+        "original":"./asset/app13.png",
+        "thumbnail":"./asset/app13.png",
         "originalAlt":"안전교육 오리지널 13번 이미지",
         "thumbnailAlt":"안전교육 썸네일 13번 이미지"
     },
     {
         "id":"13",
-        "original":"../asset/app14.png",
-        "thumbnail":"../asset/app14.png",
+        "original":"./asset/app14.png",
+        "thumbnail":"./asset/app14.png",
         "originalAlt":"안전교육 오리지널 14번 이미지",
         "thumbnailAlt":"안전교육 썸네일 14번 이미지"
     }

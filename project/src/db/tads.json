@@ -1,141 +1,141 @@
 {"tads":[
     {
         "id":"0",
-        "original":"../asset/sign1.png",
-        "thumbnail":"../asset/sign1.png",
+        "original":"./asset/sign1.png",
+        "thumbnail":"./asset/sign1.png",
         "originalAlt":"광고 오리지널 1번 이미지",
         "thumbnailAlt":"광고 썸네일 1번 이미지"
     },
     {
         "id":"1",
-        "original":"../asset/sign2.png",
-        "thumbnail":"../asset/sign2.png",
+        "original":"./asset/sign2.png",
+        "thumbnail":"./asset/sign2.png",
         "originalAlt":"광고 오리지널 2번 이미지",
         "thumbnailAlt":"광고 썸네일 2번 이미지"
     },
     {
         "id":"2",
-        "original":"../asset/sign3.png",
-        "thumbnail":"../asset/sign3.png",
+        "original":"./asset/sign3.png",
+        "thumbnail":"./asset/sign3.png",
         "originalAlt":"광고 오리지널 3번 이미지",
         "thumbnailAlt":"광고 썸네일 3번 이미지"
     },
     {
         "id":"3",
-        "original":"../asset/sign4.png",
-        "thumbnail":"../asset/sign4.png",
+        "original":"./asset/sign4.png",
+        "thumbnail":"./asset/sign4.png",
         "originalAlt":"광고 오리지널 4번 이미지",
         "thumbnailAlt":"광고 썸네일 4번 이미지"
     },
     {
         "id":"4",
-        "original":"../asset/sign5.png",
-        "thumbnail":"../asset/sign5.png",
+        "original":"./asset/sign5.png",
+        "thumbnail":"./asset/sign5.png",
         "originalAlt":"광고 오리지널 5번 이미지",
         "thumbnailAlt":"광고 썸네일 5번 이미지"
     },
     {
         "id":"5",
-        "original":"../asset/sign6.png",
-        "thumbnail":"../asset/sign6.png",
+        "original":"./asset/sign6.png",
+        "thumbnail":"./asset/sign6.png",
         "originalAlt":"광고 오리지널 6번 이미지",
         "thumbnailAlt":"광고 썸네일 6번 이미지"
     },
     {
         "id":"6",
-        "original":"../asset/sign7.png",
-        "thumbnail":"../asset/sign7.png",
+        "original":"./asset/sign7.png",
+        "thumbnail":"./asset/sign7.png",
         "originalAlt":"광고 오리지널 7번 이미지",
         "thumbnailAlt":"광고 썸네일 7번 이미지"
     },
     {
         "id":"7",
-        "original":"../asset/sign8.png",
-        "thumbnail":"../asset/sign8.png",
+        "original":"./asset/sign8.png",
+        "thumbnail":"./asset/sign8.png",
         "originalAlt":"광고 오리지널 8번 이미지",
         "thumbnailAlt":"광고 썸네일 8번 이미지"
     },
     {
         "id":"8",
-        "original":"../asset/sign9.png",
-        "thumbnail":"../asset/sign9.png",
+        "original":"./asset/sign9.png",
+        "thumbnail":"./asset/sign9.png",
         "originalAlt":"광고 오리지널 9번 이미지",
         "thumbnailAlt":"광고 썸네일 9번 이미지"
     },
     {
         "id":"9",
-        "original":"../asset/sign10.png",
-        "thumbnail":"../asset/sign10.png",
+        "original":"./asset/sign10.png",
+        "thumbnail":"./asset/sign10.png",
         "originalAlt":"광고 오리지널 10번 이미지",
         "thumbnailAlt":"광고 썸네일 10번 이미지"
     },
     {
         "id":"10",
-        "original":"../asset/sign11.png",
-        "thumbnail":"../asset/sign11.png",
+        "original":"./asset/sign11.png",
+        "thumbnail":"./asset/sign11.png",
         "originalAlt":"광고 오리지널 11번 이미지",
         "thumbnailAlt":"광고 썸네일 11번 이미지"
     },
     {
         "id":"11",
-        "original":"../asset/sign12.png",
-        "thumbnail":"../asset/sign12.png",
+        "original":"./asset/sign12.png",
+        "thumbnail":"./asset/sign12.png",
         "originalAlt":"광고 오리지널 12번 이미지",
         "thumbnailAlt":"광고 썸네일 12번 이미지"
     },
     {
         "id":"12",
-        "original":"../asset/sign13.png",
-        "thumbnail":"../asset/sign13.png",
+        "original":"./asset/sign13.png",
+        "thumbnail":"./asset/sign13.png",
         "originalAlt":"광고 오리지널 13번 이미지",
         "thumbnailAlt":"광고 썸네일 13번 이미지"
     },
     {
         "id":"13",
-        "original":"../asset/sign14.png",
-        "thumbnail":"../asset/sign14.png",
+        "original":"./asset/sign14.png",
+        "thumbnail":"./asset/sign14.png",
         "originalAlt":"광고 오리지널 14번 이미지",
         "thumbnailAlt":"광고 썸네일 14번 이미지"
     },
     {
         "id":"14",
-        "original":"../asset/sign15.png",
-        "thumbnail":"../asset/sign15.png",
+        "original":"./asset/sign15.png",
+        "thumbnail":"./asset/sign15.png",
         "originalAlt":"광고 오리지널 15번 이미지",
         "thumbnailAlt":"광고 썸네일 15번 이미지"
     },
     {
         "id":"15",
-        "original":"../asset/sign16.png",
-        "thumbnail":"../asset/sign16.png",
+        "original":"./asset/sign16.png",
+        "thumbnail":"./asset/sign16.png",
         "originalAlt":"광고 오리지널 16번 이미지",
         "thumbnailAlt":"광고 썸네일 16번 이미지"
     },
     {
         "id":"16",
-        "original":"../asset/sign17.png",
-        "thumbnail":"../asset/sign17.png",
+        "original":"./asset/sign17.png",
+        "thumbnail":"./asset/sign17.png",
         "originalAlt":"광고 오리지널 17번 이미지",
         "thumbnailAlt":"광고 썸네일 17번 이미지"
     },
     {
         "id":"17",
-        "original":"../asset/sign18.png",
-        "thumbnail":"../asset/sign18.png",
+        "original":"./asset/sign18.png",
+        "thumbnail":"./asset/sign18.png",
         "originalAlt":"광고 오리지널 18번 이미지",
         "thumbnailAlt":"광고 썸네일 18번 이미지"
     },
     {
         "id":"18",
-        "original":"../asset/sign19.png",
-        "thumbnail":"../asset/sign19.png",
+        "original":"./asset/sign19.png",
+        "thumbnail":"./asset/sign19.png",
         "originalAlt":"광고 오리지널 19번 이미지",
         "thumbnailAlt":"광고 썸네일 19번 이미지"
     },
     {
         "id":"19",
-        "original":"../asset/sign20.png",
-        "thumbnail":"../asset/sign20.png",
+        "original":"./asset/sign20.png",
+        "thumbnail":"./asset/sign20.png",
         "originalAlt":"광고 오리지널 20번 이미지",
         "thumbnailAlt":"광고 썸네일 20번 이미지"
     }
