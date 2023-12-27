@@ -3,7 +3,7 @@ import About from '../component/About'
 import Portfolio from '../component/Portfolio'
 import Contact from '../component/Contact'
 import data from '../db/data.json'
-import imgGallery from '../db/tads.json'
+
 
 const Main = (props)=>{
     const db = props.dbmain

@@ -1,3 +1,6 @@
+import React, {useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import '../scss/my.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -11,9 +14,21 @@ const Portfolio = (props)=>{
     const data = props.dbport
     const webbox = props.dbwebbox.webbox
 
+    useEffect(() => {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          // 모바일 장치가 아닌 경우에만 AOS 초기화
+          AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false
+            // 추가적인 설정들...
+          });
+        }
+      }, []);
+
     return(
         <section id="portfolio">
-            <ul className="title">
+            <ul className="title" data-aos="zoom-out-down">
                 <li><h2>Portfolio</h2></li>
                 <li className="graphic">
                     <div className="circle1"></div>
@@ -23,7 +38,7 @@ const Portfolio = (props)=>{
             </ul>
         {
             data.template.map((v,i)=>(
-                <ul key={v.id} className={v.cls}>
+                <ul key={v.id} className={v.cls} data-aos="zoom-out-right"  data-aos-delay="150">
                     <li><h3>{v.title}</h3></li>
                     <li><p>{v.content}</p></li>
                     <li className={v.imgcls}><img src={v.img} alt={v.alt} /></li>
@@ -33,7 +48,7 @@ const Portfolio = (props)=>{
         }
         {
             data.app.map((v,i)=>(
-                <ul key={v.id} className={v.cls}>
+                <ul key={v.id} className={v.cls} data-aos="zoom-out-left">
                     <li><h3>{v.title}</h3></li>
                     <li><p>{v.content}</p></li>
                     <li className={v.imgcls}><img src={v.img} alt={v.alt} /></li>
@@ -43,7 +58,8 @@ const Portfolio = (props)=>{
         }
         {
             data.web.map((v,i)=>(
-                <ul key={v.id} className={v.cls}>
+                <ul key={v.id} className={v.cls} data-aos="fade-up"
+                data-aos-easing="ease-in-out" data-aos-duration="1000">
                     <li><h3>{v.title}</h3></li>
                     <li className='titleinfo'><p>{v.content}</p></li>
                     <li className='contents'>

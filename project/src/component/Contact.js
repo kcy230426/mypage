@@ -1,5 +1,7 @@
-import react, {useRef} from 'react'
+import react, {useRef, useEffect} from 'react'
 import '../scss/my.scss'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import emailjs from '@emailjs/browser'
 
 const Contact = (props)=>{
@@ -8,6 +10,7 @@ const Contact = (props)=>{
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
 
     emailjs.sendForm('kcy230426', 'template_k087mkn', form.current, '3QZxQRsJIxHvINpby')
       .then((result) => {
@@ -17,9 +20,19 @@ const Contact = (props)=>{
           console.log(error.text);
       });}
 
+      useEffect(() => {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false
+          });
+        }
+      }, []);
+
     return(
         <section id="contact">
-            <ul className="title">
+            <ul className="title" data-aos="zoom-out-down">
                 <li><h2>Contact</h2></li>
                 <li className="graphic">
                     <div className="circle1"></div>
@@ -29,7 +42,7 @@ const Contact = (props)=>{
                 <li><p>면접 희망시 아래의 폼 제출 부탁드리겠습니다.</p></li>
             </ul>
                 {data.contact.map((v,i)=>(
-                   <section id="formbox" key={v.id}>
+                   <section id="formbox" key={v.id} data-aos="fade-up" data-aos-duration="1000" data-ous-dealy="50">
                         <figure>
                             <img className={v.imgcls1} src={v.img1} alt={v.imgalt1} />
                             <img className={v.imgcls2} src={v.img2} alt={v.imgalt2} />

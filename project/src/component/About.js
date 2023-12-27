@@ -1,10 +1,25 @@
+import React, {useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import '../scss/my.scss'
 import my from '../asset/my.png'
 
 const About = (props)=>{
     const data = props.dbprofile
+
+    useEffect(() => {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false
+          });
+        }
+      }, []);
+
     return(
-        <section id="about">
+        <section id="about" 
+            data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
             <ul className="title">
                 <li><h2>About</h2></li>
                 <li className="graphic">
@@ -16,17 +31,26 @@ const About = (props)=>{
             <ul className="view">
                 <li className="image"><img src={my} alt="프로필 사진" /></li>
                 <li className="box">
-                    <ul className="profile">
+                    <ul className="profile" 
+                        data-aos="fade-down"
+                        data-aos-easing="ease-in-out"
+                        data-aos-delay="100">
                         {data.profile.map((v,i)=>(
                             <li key={v.id} className={v.cls}><img src={v.icon} alt={v.alt} />{v.contents}</li>
                         ))}
                     </ul>
-                    <ul className="timeline">
+                    <ul className="timeline"
+                        data-aos="fade-down"
+                        data-aos-easing="ease-in-out"
+                        data-aos-delay="100">
                         {data.timeline.map((v,i)=>(
                             <li key={v.id} className={v.cls}>{v.date}<span>{v.contents}</span></li>
                         ))}
                     </ul>
-                    <ul className="skill">
+                    <ul className="skill" 
+                        data-aos="flip-down"
+                        data-aos-easing="ease-in-out-quod"
+                        data-aos-delay="150">
                             <li className="great">
                                 {data.great.map((v,i)=>(
                                     <ul key={v.id} className="d-flex align-items-center p0">
@@ -82,7 +106,10 @@ const About = (props)=>{
                 </li>
             </ul>
             {data.motive.map((v,i)=>(
-                <ul key={v.id} className="motive">
+                <ul key={v.id} className="motive" 
+                               data-aos="zoom-in"
+                               data-aos-easing="ease-in-out"
+                               data-aos-delay="150">
                     <li className={v.imgcls}><img src={v.img} alt={v.alt} /></li>
                     <li>
                         <h3>{v.title}</h3>
