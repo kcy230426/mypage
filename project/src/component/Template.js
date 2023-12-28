@@ -16,6 +16,8 @@ const Template = (props)=>{
 
     const images2 = props.dbgal2;
 
+    const images3 = props.dbgal3;
+
     const [menu, setMenu] = useState('');
 
     const [activeButton, setActiveButton] = useState('events');
@@ -34,6 +36,13 @@ const Template = (props)=>{
              <ImageGallery items={images2} infinite='true'/>
         </div>
         );
+    }
+      else if (menu === 'eventsh') {
+            menuContent = (
+            <div className='eventsh'>
+                 <ImageGallery items={images3} infinite='true'/>
+            </div>
+            );
     } else {
         menuContent = (
         <div>
@@ -52,6 +61,11 @@ const Template = (props)=>{
         setMenu('menus');
       };
 
+      const handleEventsHButtonClick = () => {
+        setActiveButton('eventsh');
+        setMenu('eventsh');
+      };
+
     return(
         <section id="template">
                     {data.tbar.map((v,i)=>(
@@ -60,6 +74,7 @@ const Template = (props)=>{
                         <li>
                             <button onClick={handleEventsButtonClick} className={`${v.btn1cls} ${activeButton === 'events' ? 'active' : ' '}`}>{v.btn1}</button>
                              <button onClick={handleMenusButtonClick} className={`${v.btn2cls} ${activeButton === 'menus' ? 'active' : ' '}`}>{v.btn2}</button>
+                             <button onClick={handleEventsHButtonClick} className={`${v.btn3cls} ${activeButton === 'eventsh' ? 'active' : ' '}`}>{v.btn3}</button>
                         </li>
                     </ul>
                     ))}
