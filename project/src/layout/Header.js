@@ -13,7 +13,7 @@ const Header = (props) =>{
 
     useEffect(() => {
         const handleScroll = () => {
-          const scrolled = window.scrollY > 80;
+          const scrolled = window.scrollY > 120;
           setIsScrolled(scrolled);
         };
     
@@ -24,7 +24,9 @@ const Header = (props) =>{
         };
       }, []);
 
-      
+    // 스크롤 여백 생김 막기
+
+    
 
     return(
         <header id="hd" className={`${isScrolled ? 'scroll' : ''}`}>
